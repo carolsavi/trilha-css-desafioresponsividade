@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+}
+
+header img {
+  width: 100%;
+}
+
+.header-text {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 4.5rem;
+}
+
+header h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botao {
+  padding: 2px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.botao1 {
+  background-color: white;
+  color: #23272a;
+}
+
+.botao2 {
+  background-color: #23272a;
+}
+
+.sec1-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 90px 0;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.sec1-img img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.sec1 p {
+  font-size: 1.5rem;
+  color: #4f5660;
+  line-height: 1.6;
+}
+
+.sec1 h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.sec1-reverse {
+  background-color: #f6f6f6;
+}
+
+.sec1-reverse .sec1-img {
+  order: 2;
+}
+
+.sec1-reverse .sec1-text {
+  order: 1;
+}
+
+.sec2 {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.sec2-conteudo {
+  padding: 60px 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.sec2 h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.sec2 p {
+  font-size: 1.25rem;
+  color: #4f5660;
+  line-height: 1.6;
+}
+
+footer .container {
+  background-color: #23272a;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0rem;
+    background-position-x: 20%;
+  }
+
+  .header-text {
+    text-align: center;
+    max-width: 80vw;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    flex-flow: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .botao {
+    padding: 0px 5px;
+    margin-top: 0px;
+    width: 90%;
+  }
+
+  .botao p {
+    font-size: 1rem;
+  }
+
+  .sec1-conteudo {
+    display: flex;
+    flex-flow: column;
+    max-width: 80vw;
+    max-height: 100vh;
+  }
+
+  .sec1 h2 {
+    font-size: 2rem;
+  }
+
+  .sec1 p {
+    font-size: 1rem;
+  }
+
+  .sec2 p {
+    font-size: 1rem;
+  }
+
+  .sec2-conteudo {
+    max-width: 80vw;
+    max-height: 100vh;
+  }
+
+  .sec2-img img {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+
+  footer img {
+    max-width: 40%;
+  }
+}
